@@ -1,0 +1,89 @@
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+    --grey:#4E5153;
+    --red:rgb(255, 0, 0);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.inputFoto{
+    display: none;
+    overflow: hidden;
+}
+
+input[type="file"]{
+    height: 6.5rem;
+    width: 5rem;
+    background: #fff;
+    margin-left: 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.container-superior .container-box .container-lateral .container-user-import .imagemImport{
+    position: relative;
+    top: 6rem;
+    left: .3rem;
+}
+
+/* container superior */
+.container-superior{
+    background: #38393D;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-superior .header{
+    display: flex;
+    justify-content: center;
+    background: var(--cinza-navbar);
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 20;
+}
+
+.container-superior .header .header-imagem{
+    margin-top: 1.3rem;
+}
+
+.container-superior .container-box{
+    display: flex;
+    background: var(--grey);
+}
+
+#pdf-container {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    z-index: 10;
+}
+
+#pdf-container.grande{
+    margin-left: 29rem;
+}
+
+#pdf-container.medio{
+    margin-left: 29rem;
+}
+
+.container-user2{
+    display: none;
+}
