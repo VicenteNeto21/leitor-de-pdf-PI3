@@ -1,0 +1,1266 @@
+#pdf-container.pequeno{
+    margin-left: 40rem;
+}
+
+#pdf-container.medio{
+    margin-left: 38rem;
+}
+
+#pdf-container.grande{
+    margin-left: 26rem;
+}
+
+#pdf-container.active.pequeno{
+    margin-left: 48rem;
+}
+
+#pdf-container.active.medio{
+    margin-left: 46rem;
+}
+
+#pdf-container.active.grande{
+    margin-left: 36rem;
+}
+
+@media (max-width: 1700px){
+    #pdf-container.pequeno{
+        margin-left: 30rem;
+    }
+    
+    #pdf-container.medio{
+        margin-left: 29rem;
+    }
+    
+    #pdf-container.grande{
+        margin-left: 14rem;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 35rem;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 34rem;
+    }
+    
+    #pdf-container.active.grande{
+        margin-left: 24rem;
+    }
+}
+
+@media (max-width: 1600px){
+    #pdf-container.pequeno{
+        margin-left: 25rem;
+    }
+    
+    #pdf-container.medio{
+        margin-left: 23rem;
+    }
+    
+    #pdf-container.grande{
+        margin-left: 9rem;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 35rem;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 34rem;
+    }
+    
+    #pdf-container.active.grande{
+        margin-left: 19rem;
+    }
+}
+
+@media (max-width: 1500px){
+    #pdf-container.pequeno{
+        margin-left: 25rem;
+    }
+
+    #pdf-container.medio{
+        margin-left: 23rem;
+    }
+    
+    #pdf-container.grande{
+        margin-left: 9rem;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 31rem;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 30rem;
+    }
+    
+    #pdf-container.active.grande{
+        margin-left: 19rem;
+    }
+}
+
+/* Versão da Tela do Computador */
+@media (max-width: 1400px){
+    .container-bottom{
+        display: none;
+    }
+
+    .container-user2{
+        display: none;
+    }
+
+    #pdf-container.pequeno {
+        margin-left: 12%;
+    }
+
+    #pdf-container.medio {
+        margin-left: 9%;
+    }
+
+    #pdf-container.grande {
+        margin-left: 1%;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 20%;
+    } 
+
+    #pdf-container.active.medio {
+        margin-left: 19%;
+    }   
+
+    #pdf-container.active.grande{
+        margin-left: 9%;
+    } 
+    
+    .Container-superior .Container-box .container-lateral{
+        background: var(--cinza-navbar);
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+        height: 93%;
+        align-items: center;
+        margin-top: 5rem;
+        position: fixed;
+        z-index: 20;
+    }
+    .Container-superior .Container-box .container-lateral .container-icons .container-icons__primeiro, .Container-superior .Container-box .container-lateral .container-icons .container-icons__segundo, .Container-superior .Container-box .container-lateral .container-icons .container-icons__quarto, .Container-superior .Container-box .container-lateral .container-icons .container-icons__quinto{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-mouse{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-lixeira{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-user .container-save{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+
+    input[type="file"]{
+        height: 5.5rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-user-import .imagemImport{
+        top: 5.5rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .separador.activeA .option{
+        margin-top: 32rem;
+    	margin-left: 7rem;
+    }
+
+    .separador.activePincel .option{
+        margin-top: 27rem;
+   		margin-left: 7rem;
+    }
+
+    .separador.activeStar .option{
+        margin-top: 37rem;
+    	margin-left: 7rem;
+    }
+    
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel{
+        margin-top: 16rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-pincel.active {
+        margin-left: 7.5rem;
+        height: 100%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A{
+        margin-top: 18rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-A.active {
+        margin-left: 7.5rem;
+        height: 100%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        margin-top: 16rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star.active {
+        margin-left: 7.5rem;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1300px){
+    #pdf-container.pequeno{
+        margin-left: 9%;
+    }
+
+    #pdf-container.medio {
+        margin-left: 6%;
+    } 
+
+    #pdf-container.grande{
+        margin-left: -3%;
+    } 
+
+    #pdf-container.active.pequeno{
+        margin-left: 18%;
+    }    
+
+    #pdf-container.active.medio {
+        margin-left: 16%;
+    } 
+
+    #pdf-container.active.grande{
+        margin-left: 7%;
+    } 
+}
+
+@media (max-width: 1200px){
+    #pdf-container.pequeno{
+        margin-left: 6%;
+    }
+
+    #pdf-container.medio {
+        margin-left: 3%;
+    } 
+
+    #pdf-container.grande{
+        margin-left: -7%;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 16%;
+    } 
+    
+    #pdf-container.active.medio{
+        margin-left: 13%;
+    }
+
+    #pdf-container.active.grande{
+        margin-left: 4%;
+    } 
+}
+
+@media (max-width: 1180px){ /* Limite para pdf 'grande' com modal ativado */
+    #pdf-container.active.grande{
+        width: 75% !important;
+    }
+    
+    #pdf-container.active.grande .pdf-canvas {
+        width: 100% !important;
+    }
+
+    #pdf-container.active.grande .canvas-container {
+        width: 100% !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; 
+    }
+}
+
+@media (max-width: 1100px){
+    #pdf-container.pequeno{
+        margin-left: 0%;
+    } 
+    
+    #pdf-container.medio{
+        margin-left: 0%;
+    }  
+
+    #pdf-container.grande{
+        margin-left: -12%;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 14%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1050px){
+    #pdf-container.grande{
+        width: 80% !important;
+        margin-left: -11%;
+    }
+
+    #pdf-container.grande .pdf-canvas {
+        width: 100% !important;
+    }
+
+    #pdf-container.grande .canvas-container {
+        width: 100% !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; 
+    }
+}
+
+@media (max-width: 1000px){ /* Limite para pdf 'grande' */
+    #pdf-container.pequeno{
+        margin-left: -3%;
+    }
+
+    #pdf-container.medio{
+        margin-left: -4%;
+    } 
+
+    #pdf-container.grande{
+        margin-left: -12%;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 12%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 950px){
+    #pdf-container.medio{
+        margin-left: -6%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 900px){
+    #pdf-container.pequeno{
+        margin-left: -7%;
+    }
+
+    #pdf-container.medio{
+        margin-left: -12%;
+    }
+
+    #pdf-container.grande{
+        margin-left: -14%;
+    }
+
+    #pdf-container.active.pequeno{
+        margin-left: 6%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 2%;
+    }
+
+    #pdf-container.active.grande{
+        margin-left: 2%;
+    }
+
+    
+}
+
+@media (max-width: 880px){
+    #pdf-container.active.medio{
+        width: 75% !important;
+    }
+    
+    #pdf-container.active.medio .pdf-canvas {
+        width: 100% !important;
+    }
+
+    #pdf-container.active.medio .canvas-container {
+        width: 100% !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; 
+    }
+}
+
+@media (max-width: 850px){
+    #pdf-container.pequeno{
+        margin-left: -10%;
+    }
+
+    #pdf-container.medio{
+        margin-left: -15%;
+    }
+
+    #pdf-container.grande{
+        margin-left: -16%;
+    }
+    
+    #pdf-container.active.pequeno{
+        margin-left: 2%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 1%;
+    }
+}
+
+@media (max-width: 800px){
+    #pdf-container.pequeno{
+        margin-left: -15%;
+    }
+
+    #pdf-container.medio{
+        margin-left: -20%;
+    }
+
+    #pdf-container.grande{
+        margin-left: -18%;
+    }
+
+
+    #pdf-container.active.pequeno{
+        margin-left: -2%;
+    }
+
+    #pdf-container.active.medio{
+        margin-left: 0%;
+    }
+
+    #pdf-container.active.grande{
+        margin-left: 1%;
+    }
+}
+
+/* Versão Mobile (Grande) */
+@media (max-width:770px){ 
+    .container-user2{
+        display: flex;
+        margin-right: 3rem;
+        margin-top: 2rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .container-user{
+        display: none;
+    }
+
+    .container-user-import{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    input[type="file"] {
+        margin-left: 0rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-user2 .container-lixeira2{
+        width: 4.5rem;
+        height: 4.5rem;
+        background: red;
+        border-radius: 50%;
+        line-height: 4.7rem;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .Container-superior .Container-box .container-lateral .container-user2 .container-mouse2{
+        width: 4.5rem;
+        height: 4.5rem;
+        background: var(--preto);
+        border-radius: 50%;
+        line-height: 4.7rem;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .Container-superior .Container-box .container-lateral .container-user2 .container-mouse2.active{
+        border: .2rem solid red;
+    }
+    
+    .Container-superior .Container-box .container-lateral .container-user2 .container-save2{
+        line-height: 4.7rem;
+        padding-left: .2rem;
+        width: 4.5rem;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        height: 4.5rem;
+        background: #fff;
+        border-radius: 50%;
+    }
+    
+    .Container-superior .Container-box .container-lateral .container-user2 .container-lixeira2:hover{
+        border: .2rem solid #000;
+    }
+    
+    .Container-superior .container-mouse:hover, .Container-superior .Container-box .container-lateral .container-user2 .container-save2:hover{
+        border: .2rem solid red;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-user-import .imagemImport {            
+        top: 2.5rem;
+        height: 3rem;
+        width: 3rem;
+        left: 4.6rem;
+    }
+
+    /* Button - Pincel */
+    .Container-superior .Container-box .container-buttons-pincel.active {
+        top: 12.5rem;
+        position: fixed;
+        margin-left: 0rem;
+        height: 11.5%;
+    }
+    
+    .Container-superior .Container-box .container-buttons-pincel {
+        width: 100%;
+        background: var(--cinza-navbar);
+        position: relative;
+        top: -300rem;
+        z-index: 20;
+        margin-left: 10rem;
+        margin-top: 8rem;
+        height: 7.5rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel {
+        display: flex;
+        flex-direction: row; 
+        margin-top: 1.2rem;
+        margin-left: 26%;
+    }
+
+    .separador.activePincel .option{
+        width: 6rem;
+        height: 0.5rem;
+        margin-left: 45.5%;
+        margin-top: 20rem;
+    }
+
+    /* Button - A */
+    .Container-superior .Container-box .container-buttons-A{
+        width: 100%;
+        background:var(--cinza-navbar);
+        position: relative;
+        top: -300rem;
+        z-index: 20;
+        margin-top: 8rem;
+        height: 7.5rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-A.active{
+        top: 12.5rem;
+        position: fixed;
+        margin-left: 0rem;
+        height: 12.5%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A{
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 40%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario-A{
+        height: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario-A label {
+        margin-bottom: 0rem;
+        font-size: 1.3rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario-A .form-control{
+        font-size: 1.3rem;
+    }
+
+    .separador.activeA .option{
+        width: 6rem;
+        height: 0.5rem;
+        margin-left: 54.5%;
+        margin-top: 20rem;
+    }
+
+    /* Button - Star */
+
+    .Container-superior .Container-box .container-buttons-Star{
+        width: 100%;
+        background:var(--cinza-navbar);
+        position: relative;
+        top: -300rem;
+        z-index: 20;
+        margin-top: 8rem;
+        height: 7.5rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star.active{
+        top: 12.5rem;
+        position: fixed;
+        margin-left: 0rem;
+        height: 11.5%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.2rem;
+        margin-left: 26%;
+    }
+
+    .separador.activeStar .option{
+        width: 6rem;
+        height: 0.5rem;
+        margin-left: 62%;
+        margin-top: 20rem;
+    }
+
+
+    .Container-superior .Container-box .container-lateral{
+        background: var(--cinza-navbar);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
+        
+    }
+
+    .Container-superior .Container-box .container-lateral .container-icons{
+        display: flex;
+        gap:2rem;
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-user .container-exit{
+        margin-left: 1.5rem;
+    }
+
+    .container-bottom{
+        display: flex;
+        height: 48rem;
+        background-color: #4E5153;
+    }
+
+    .container-bottom.semFundo{
+        display: none;   
+    }
+
+    #pdf-container.medio{
+        margin-left: -309%;
+        margin-top: 32%;
+        margin-bottom: 4%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -303%;
+        margin-top: 31%;
+        margin-bottom: 4%;
+    }
+
+    #pdf-container.grande{
+        margin-left: -311%;
+        margin-top: 33%;
+        margin-bottom: 4%;
+        width: 90% !important;
+    }
+
+    #pdf-container.pequeno.active{
+        margin-left: -203%;
+        margin-top: 40%;
+        margin-bottom: 2%;
+    }
+
+    #pdf-container.pequeno.activePincel2{
+        margin-left: -190%;
+    }
+
+    #pdf-container.medio.active{
+        margin-left: -210%;
+        margin-top: 42%;
+        margin-bottom: 2%;
+        width: 90% !important;
+    }
+
+    #pdf-container.medio.activePincel2{
+        margin-left: -196%;
+        margin-top: 42%;
+    }
+
+    #pdf-container.grande.active{
+        margin-left: -210%;
+        margin-top: 43%;
+        margin-bottom: 2%;
+        width: 90% !important;
+    }
+
+    #pdf-container.grande.active.activePincel2{
+        margin-left: -147rem;
+    }
+}
+
+@media (max-width: 740px){
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -142rem;
+    }
+}
+
+@media (max-width:720px){
+
+    #pdf-container.medio{
+        margin-right: 5%;
+        margin-top: 34%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 45%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 45%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -307%;
+        margin-top: 33%;
+    }
+
+    #pdf-container.grande {
+        margin-left: -311%;
+        margin-top: 33%;
+        margin-bottom: 4%;
+        width: 90% !important;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -207%;
+        margin-top: 44%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -193%;
+        margin-top: 44%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -138rem;
+    }
+}
+
+@media (max-width:700px){
+    #pdf-container.pequeno.active {
+        margin-left: -209%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -194%;
+    }
+
+    #pdf-container.medio{
+        margin-right: 6%;
+        margin-top: 36%;
+        width: 90% !important;
+    }
+
+    #pdf-container.medio .pdf-canvas {
+        width: 100% !important;
+    }
+
+    #pdf-container.medio .canvas-container {
+        width: 100% !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; 
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -211%;
+        margin-top: 46%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -134rem;
+    }
+}
+
+@media (max-width: 680px){
+    #pdf-container.pequeno {
+        margin-left: -311%;
+        margin-top: 35%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -211%;
+        margin-top: 47%
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -196%;
+        margin-top: 47%
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -130rem;
+    }
+}
+
+@media (max-width: 650px){
+    #pdf-container.medio{
+        margin-top: 38%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 50%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 49%;
+    }
+
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel {
+        margin-left: 20%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        margin-left: 21%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A {
+        margin-left: 36%;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-icons {
+        margin-right: 4rem;
+    }
+
+    .separador.activeStar .option{
+        margin-left: 61%;
+    }
+
+    .separador.activeA .option{
+        margin-left: 51.5%;
+    }
+
+    .separador.activePincel .option{
+        margin-left: 42.5%;
+    }
+
+    #pdf-container.grande{
+        margin-top: 37%;
+        margin-left: -313%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -314%;
+        margin-top: 35%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -214%;
+        margin-top: 48%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -198%;
+        margin-top: 48%;
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -212%;
+        margin-top: 50%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -124rem;
+    }
+}
+
+@media (max-width: 630px){
+    #pdf-container.pequeno{
+        width: 90% !important;
+        margin-top: 38%;
+    }
+    
+    #pdf-container.pequeno .pdf-canvas {
+        width: 100% !important;
+    }
+
+    #pdf-container.pequeno .canvas-container {
+        width: 100% !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; 
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -120rem;
+    }
+}
+
+@media (max-width: 600px){
+    #pdf-container.medio{
+        margin-top: 40%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 54%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 53%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -314%;
+        margin-top: 39%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -214%;
+        margin-top: 52%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -197%;
+        margin-top: 52%;
+    }
+
+    #pdf-container.grande {
+        margin-top: 38%;
+        margin-left: -314%;
+    }
+
+    #pdf-container.grande.active{
+        margin-left: -214%;
+        margin-top: 53%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -113rem;
+        margin-top: 53%;
+    }
+}
+
+@media (max-width: 580px){
+    #pdf-container.pequeno.active {
+        margin-top: 54%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-top: 54%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -109rem;
+    }
+}
+
+@media (max-width: 550px){
+    #pdf-container.medio{
+        margin-top: 44%;
+        margin-right: 7%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 58%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 57%;
+    }
+
+    
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel {
+        margin-left: 15%;
+    }
+
+    .separador.activePincel .option{
+        margin-left: 41.5%;
+    }
+
+    .separador.activeA .option{
+        margin-left: 52%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        margin-left: 16%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A {
+        margin-left: 35%;
+    }
+
+    .separador.activeStar .option{
+        margin-left: 62.5%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -316%;
+        margin-top: 43%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -216%;
+        margin-top: 57%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -197%;
+        margin-top: 57%;
+    }
+
+    #pdf-container.grande{
+        margin-top: 42%;
+        margin-left: -316%;
+    }
+
+    #pdf-container.grande.active{
+        margin-top: 59%;
+        margin-left: -113rem;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -103rem;
+        margin-top: 57%;
+    }
+}
+
+@media (max-width: 520px){
+    #pdf-container.pequeno{
+        margin-left: -317%;
+        margin-top: 45%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -216%;
+        margin-top: 60%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -197%;
+        margin-top: 60%;
+    }
+
+    #pdf-container.grande {
+        margin-top: 45%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -98rem;
+        margin-top: 60%;
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -109rem;
+        margin-top: 60%;
+    }
+}
+
+@media (max-width: 500px){
+    #pdf-container.medio{
+        margin-top: 48%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 64%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 63%;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-icons {
+        margin-left: 3rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel {
+        margin-left: 13%;
+    }
+
+    .Container-superior .Container-box .container-buttons-A .container-buttons__A{
+        margin-left: 32%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        margin-left: 12%;
+    }
+
+     .separador.activeStar .option{
+        margin-left: 67.5%;
+    }
+
+    .separador.activeA .option{
+        margin-left: 55%;
+    }
+
+    .separador.activePincel .option{
+        margin-left: 43%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -318%;
+        margin-top: 47%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -218%;
+        margin-top: 64%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -197%;
+        margin-top: 64%;
+    }
+
+    #pdf-container.grande{
+        margin-top: 47%;
+        margin-left: -318%;
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -105rem;
+        margin-top: 64%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -95rem;
+        margin-top: 64%;
+    }
+}
+
+@media (max-width: 480px){
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 67%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 66%;
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -100rem;
+        margin-top: 67%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -90rem;
+        margin-top: 67%;
+    }
+}
+
+/* Versão Mobile (Médio) */
+@media (max-width:450px){ 
+    .Container-superior .Container-box .container-lateral .container-icons .container-icons__primeiro, .container .container-icons .container-icons__segundo, .container .container-icons .container-icons__quarto, .container .container-icons .container-icons__quinto, .container .container-icons .container-icons__terceiro{
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.7rem;
+    }
+
+    .Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel {
+        margin-left: 12%;
+    }
+
+    .Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro{
+        line-height: 7rem;
+    }
+
+    .separador.activeA .option{
+        margin-left: 58.5%;
+    }
+
+    .Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+        margin-left: 8%;
+    }
+
+    .separador.activeStar .option{
+        margin-left: 71.5%;
+    }
+
+    #pdf-container.pequeno{
+        margin-left: -320%;
+        margin-top: 52%;
+    }
+
+    #pdf-container.medio.active {
+        margin-left: -211%;
+        margin-top: 70%;
+    }
+
+    #pdf-container.medio.activePincel2 {
+        margin-left: -197%;
+        margin-top: 70%;
+    }
+
+    #pdf-container.pequeno.active {
+        margin-left: -221%;
+        margin-top: 70%;
+    }
+
+    #pdf-container.pequeno.activePincel2 {
+        margin-left: -197%;
+        margin-top: 70%;
+    }
+
+    #pdf-container.grande{
+        margin-top: 50%;
+        margin-left: -321%;
+    }
+
+    #pdf-container.grande.active {
+        margin-left: -95rem;
+        margin-top: 70%;
+    }
+
+    #pdf-container.grande.active.activePincel2 {
+        margin-left: -86rem;
+        margin-top: 70%;
+    }
+
+}
