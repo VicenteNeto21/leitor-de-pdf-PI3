@@ -17,9 +17,15 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <div class="Container-superior">
     <div class="Header">
       <div class="Header-image">
+=======
+  <div class="container-superior">
+    <div class="header">
+      <div class="header-imagem">
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
         <img src="./images/joelinton-logo.png" alt="" width="150px" height="auto" />
       </div>
     </div>
@@ -29,6 +35,7 @@
       <div class="container-lateral">
         <div class="container-user-import">
           <div class="container-import" onclick="{importfile(event)}">
+<<<<<<< HEAD
               <img src="./images/importar.png" alt="icon import navbar" class="imagemImport"/>
               <input type="file" name="importFile" id="importFile" accept=".pdf" class="importFile">
             <a class="help-button col-sm-4 downloadupaddinvoice"  title="Download uploaded invoice" download><i class="icon-download-alt"></i></a>
@@ -43,6 +50,22 @@
               onclick="{deleteSelectedObject(event)}"
             >
               <img src="./images/lixo.png" alt="icon lixo navbar" />
+=======
+            <img src="./images/importar.png" alt="icon import navbar" class="imagemImport" />
+
+            <input type="file" name="importFile" id="importFile" accept=".pdf" class="importFile">
+
+            <a class="help-button col-sm-4 downloadupaddinvoice" title="Download uploaded invoice" download><i
+                class="icon-download-alt"></i></a>
+          </div>
+
+          <div class="container-user-2">
+            <div class="container-mouse-2" onclick="{enableSelector(event)}">
+              <img src="./images/mao.png" alt="movimentar as peças" />
+            </div>
+            <div class="container-lixeira-2" onclick="{deleteSelectedObject(event)}">
+              <img src="./images/lixo.png" alt="apagar coisas da tela" />
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             </div>
             <div class="container-save2" onclick="{savePDF()}">
               <img src="./images/disquete.png" alt="icon save navbar" />
@@ -51,6 +74,7 @@
         </div>
 
         <div class="container-icons">
+<<<<<<< HEAD
           <div class="container-icons__primeiro" onclick="{addImage(event)}">
             <img src="../../images/galeria.png" alt="icon house navbar" />
           </div>
@@ -75,6 +99,21 @@
             id="buttonA"
             onclick="{enableAddText(event)}"
           >
+=======
+          <div class="container-icons-primeiro" onclick="{addImage(event)}">
+            <img src="./images/galeria.png" alt="adicionar imagens" />
+          </div>
+
+          <div class="container-icons-segundo" onclick="{clearPage(event)}">
+            <img src="./images/excluir-selecao.png" alt="Excluir Selecao" />
+          </div>
+
+          <div class="container-icons-terceiro" id="buttonPincel" onclick="{enablePencil(event)}">
+            <img src="./images/pincel.png" alt="Pincel de cores" />
+          </div>
+
+          <div class="container-icons__quarto container-A" id="buttonA" onclick="{enableAddText(event)}">
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             <img src="./images/a.png" alt="icon Alfabeto navbar" />
           </div>
 
@@ -87,10 +126,14 @@
           <div class="container-mouse" onclick="{enableSelector(event)}">
             <img src="./images/mao.png" alt="icon mao navbar" />
           </div>
+<<<<<<< HEAD
           <div
             class="container-lixeira"
             onclick="{deleteSelectedObject(event)}"
           >
+=======
+          <div class="container-lixeira" onclick="{deleteSelectedObject(event)}">
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             <img src="./images/lixo.png" alt="icon lixo navbar" />
           </div>
           <div class="container-save" onclick="{savePDF()}">
@@ -105,6 +148,7 @@
 
       <!--container buttons do pincel-->
       <div class="container-buttons-pincel">
+<<<<<<< HEAD
         <div class="container-buttons__pincel">
           <div
             class="button-secundario color-tool"
@@ -130,11 +174,30 @@
             class="button-secundario color-tool"
             style="background-color: yellow"
           ></div>
+=======
+
+        <div class="container-buttons-select-pincel">
+
+          <div class="button-secundario-A">
+            <label for>Tamanho do Pincel</label>
+            <input type="number" class="form-control text-right" value="1" id="brush-size" max="50" />
+          </div>
+          <div class="button-secundario color-tool" style="background-color: black"></div>
+
+          <div class="button-secundario color-tool" style="background-color: red"></div>
+
+          <div class="button-secundario color-tool" style="background-color: blue"></div>
+
+          <div class="button-secundario color-tool" style="background-color: green"></div>
+
+          <div class="button-secundario color-tool" style="background-color: yellow"></div>
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
         </div>
       </div>
 
       <!--container buttons do A-->
       <div class="container-buttons-A">
+<<<<<<< HEAD
         <div class="container-buttons__A">
           <div class="button-secundario-A">
             <label for>Brush</label>
@@ -151,6 +214,12 @@
           <div class="button-secundario-A">
             <label for>Font</label>
             <label for>Size</label>
+=======
+        <div class="container-buttons-select-A">
+
+          <div class="button-secundario-A">
+            <label for>Tamanho da Fonte</label>
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             <select id="font-size" class="form-control">
               <option value="10">10</option>
               <option value="12">12</option>
@@ -159,9 +228,12 @@
               <option value="24">24</option>
               <option value="32">32</option>
               <option value="48">48</option>
+<<<<<<< HEAD
               <option value="64">64</option>
               <option value="72">72</option>
               <option value="108">108</option>
+=======
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             </select>
           </div>
         </div>
@@ -171,11 +243,15 @@
       <div class="container-buttons-Star">
         <div class="container-buttons__Star">
           <div class="button-secundario">
+<<<<<<< HEAD
             <img
               src="./images/circulo.png"
               onclick="enableCircle(event)"
               alt=""
             />
+=======
+            <img src="./images/circulo.png" onclick="enableCircle(event)" alt="" />
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
           </div>
 
           <div class="button-secundario" onclick="enableRectangle(event)">
@@ -183,6 +259,7 @@
           </div>
 
           <div class="button-secundario">
+<<<<<<< HEAD
             <img
               src="./images/triangulo.png"
               onclick="enableTriangulo(event)"
@@ -202,6 +279,16 @@
             class="button-secundario B5-STAR"
             onclick="enableQuadrado(event)   "
           >
+=======
+            <img src="./images/triangulo.png" onclick="enableTriangulo(event)" alt="" />
+          </div>
+
+          <div class="button-secundario">
+            <img src="./images/linha.png" onclick="enableLine(event)" alt="" />
+          </div>
+
+          <div class="button-secundario B5-STAR" onclick="enableQuadrado(event)">
+>>>>>>> e12778dc1ce203b502d54aa0dcee2e7d8285a416
             <img src="./images/retangulo.png" alt="" />
           </div>
         </div>
