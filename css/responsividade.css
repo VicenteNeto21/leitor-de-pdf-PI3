@@ -135,7 +135,6 @@
     } 
     
     .Container-superior .Container-box .container-lateral{
-        background: var(--cinza-navbar);
         width: 7rem;
         display: flex;
         flex-direction: column;
