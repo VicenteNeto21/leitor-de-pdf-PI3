@@ -1,0 +1,405 @@
+:root{
+    --preto:#1D1E22;
+    --cinza-navbar: #38393D;
+    --grey:#4E5153;
+    --red:rgb(255, 0, 0);
+    --branco:rgb(208, 208, 208);
+    --azul:rgb(35, 115, 255);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--branco);
+}
+
+.inputFoto{
+    display: none;
+    overflow: hidden;
+}
+
+input[type="file"]{
+    height: auto;
+    width: 5rem;
+    background: #ffffff;
+    margin-left: 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.Container-superior .Container-box .container-lateral .container-user-import .imagemImport{
+    position: relative;
+    top: 6rem;
+    left: .3rem;
+}
+
+/* container superior */
+.Container-superior{
+    display: flex;
+    flex-direction: column;
+}
+
+.Container-superior .Header{
+    display: flex;
+    justify-content: center;
+    background: var(--azul);
+    box-shadow: 2px 2px 4px black;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 20;
+}
+
+.Container-superior .Header .Header-image{
+    margin-top: 1.3rem;
+}
+
+.Container-superior .Container-box{
+    display: flex;
+    background: var(--branco);
+}
+
+#pdf-container {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    z-index: 10;
+}
+
+#pdf-container.grande{
+    margin-left: 29rem;
+}
+
+#pdf-container.medio{
+    margin-left: 29rem;
+}
+
+.container-user2{
+    display: none;
+}
+
+/* container lateral */
+.Container-superior .Container-box .container-lateral{
+    background: rgb(196, 217, 255);
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 4px black;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    align-items: center;
+    margin-top: 5rem;
+    position: fixed;
+    z-index: 20;
+}
+
+.Container-superior .Container-box .container-lateral .container-image{
+    width: 12rem;
+}
+
+.Container-superior .Container-box .container-lateral .container-image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons{
+    padding: 2rem;
+    margin: auto 2rem;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__primeiro,.Container-superior .Container-box .container-lateral .container-icons .container-icons__segundo,.Container-superior .Container-box .container-lateral .container-icons .container-icons__quarto,.Container-superior .Container-box .container-lateral .container-icons .container-icons__quinto{
+    height: 5rem;
+    width: 5rem;
+    background: var(--azul);
+    border-radius: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
+    cursor: pointer;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro{
+    height: 5rem;
+    width: 5rem;
+    background: var(--azul);
+    border-radius: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
+    cursor: pointer;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro.active{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__quarto.active{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__quinto.active{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-lateral .container-icons .container-icons__primeiro:hover,.Container-superior .Container-box .container-lateral .container-icons .container-icons__segundo:hover, .Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro:hover,.Container-superior .Container-box .container-lateral .container-icons .container-icons__quarto:hover,.Container-superior .Container-box .container-lateral .container-icons .container-icons__quinto:hover{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-lateral .container-user-import{
+    text-align: center;
+}
+
+.Container-superior .Container-box .container-lateral .container-user{
+    text-align: center;
+}
+
+.Container-superior .Container-box .container-lateral .container-lixeira{
+    width: 5rem;
+    height: 5rem;
+    background: red;
+    border-radius: 50%;
+    line-height: 4.7rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.Container-superior .Container-box .container-lateral .container-mouse{
+    width: 5rem;
+    height: 5rem;
+    background: var(--preto);
+    border-radius: 50%;
+    line-height: 4.7rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.Container-superior .Container-box .container-lateral .container-mouse.active{
+    border: .2rem solid red;
+}
+
+.Container-superior .Container-box .container-lateral .container-user .container-save{
+    line-height: 4.7rem;
+    padding-left: .2rem;
+    width: 5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.Container-superior .Container-box .container-lateral .container-lixeira:hover{
+    border: .2rem solid #000;
+}
+
+.Container-superior .container-mouse:hover, .Container-superior .Container-box .container-lateral .container-user .container-save:hover{
+    border: .2rem solid red;
+}
+
+/*Separador*/
+
+.separador{
+    width: 5px;
+    background: var(--grey);
+}
+
+.separador.activePincel .option{
+    width: 5px;
+    height: 6rem;
+    background: var(--cinza-navbar);
+    margin-top: 41rem;
+    position: fixed;
+    z-index: 20;
+    margin-left: 10rem;
+}
+
+.separador.activeA .option{
+    width: 5px;
+    height: 6rem;
+    background: var(--cinza-navbar);
+    margin-top: 47rem;
+    position: fixed;
+    z-index: 20;
+    margin-left: 10rem;
+}
+
+.separador.activeStar .option{
+    width: 5px;
+    height: 6rem;
+    background: var(--cinza-navbar);
+    margin-top: 53rem;
+    position: fixed;
+    z-index: 20;
+    margin-left: 10rem;
+}
+
+/*Container intermediario*/
+
+
+/*Container secundario pincel*/
+.Container-superior .Container-box .container-buttons-pincel{
+    width: 8rem;
+    background:var(--cinza-navbar);
+    position: relative;
+    top: -300rem;
+    z-index: 20;
+    margin-top: 4rem;
+    height: 60rem;
+}
+
+.Container-superior .Container-box .container-buttons-pincel.active{
+    top: 1rem;
+    position: fixed;
+    margin-left: 10.5rem;
+    height: 100%;
+}
+
+.Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 27.5rem;
+}
+
+.Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel .button-secundario{
+    height: 5rem;
+    width: 5rem;
+    background: var(--preto);
+    color: #fff;
+    border-radius: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel .button-secundario:hover{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-buttons-pincel .container-buttons__pincel .button-secundario h1{
+    color: #fff;
+    line-height: 2;
+}
+
+/*Container secundario A*/
+.Container-superior .Container-box .container-buttons-A{
+    width: 8rem;
+    background:var(--cinza-navbar);
+    position: relative;
+    top: -300rem;
+    z-index: 20;
+    margin-top: 5rem;
+    height: 59rem;
+}
+
+.Container-superior .Container-box .container-buttons-A.active{
+    top: 0rem;
+    position: fixed;
+    margin-left: 10.5rem;
+    height: 100%;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30rem;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A .form-control{
+    font-size: 2rem;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario-A{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 6rem;
+    background: var(--preto);
+    color: #fff;
+    border-radius:5%;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario{
+    height: 5rem;
+    width: 5rem;
+    background: var(--preto);
+    border-radius: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario:hover{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-buttons-A .container-buttons__A .button-secundario h1{
+    color: #fff;
+    line-height: 2;
+}
+
+/*Container secundario Star*/
+.Container-superior .Container-box .container-buttons-Star{
+    width: 8rem;
+    background:var(--cinza-navbar);
+    position: relative;
+    top: -300rem;
+    z-index: 20;
+    height: 64rem;
+}
+
+.Container-superior .Container-box .container-buttons-Star.active{
+    top: 5rem;
+    position: fixed;
+    margin-left: 10.5rem;
+    height: 100%;
+}
+
+.Container-superior .Container-box .container-buttons-Star .container-buttons__Star{
+    display: flex;
+    flex-direction: column;
+    margin-top: 27.5rem;
+}
+
+.Container-superior .Container-box .container-buttons-Star .container-buttons__Star .button-secundario{
+    height: 5rem;
+    width: 5rem;
+    background: var(--preto);
+    border-radius: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 4.7rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.Container-superior .Container-box .container-buttons-Star .container-buttons__Star .button-secundario:hover{
+    border: .1rem solid red;
+}
+
+.Container-superior .Container-box .container-buttons-Star .container-buttons__Star .button-secundario h1{
+    color: #fff;
+    line-height: 2;
+}

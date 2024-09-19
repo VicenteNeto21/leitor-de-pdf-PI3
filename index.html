@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>joelintonPD</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsividade.css">
+
+  <!--Link do css extra-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" />
+</head>
+
+<body>
+  <div class="Container-superior">
+    <div class="Header">
+      <div class="Header-image">
+        <!-- <h1 style="color: white;">Leitor de PDF</h1> -->
+        <img src="./images/joelinton-logo.png" alt="" width="150px" height="auto" />
+      </div>
+    </div>
+
+    <div class="Container-box">
+      <!-- menu lateral -->
+      <div class="container-lateral">
+        <div class="container-user-import">
+          <div class="container-import" onclick="{importfile(event)}">
+              <!-- <img src="./images/importar.png" alt="icon import navbar" class="imagemImport"/> -->
+              <input type="file" name="importFile" id="importFile" accept=".pdf" class="importFile" style="background-image: url(./images/importar.png); background-repeat: no-repeat; background-position: center;">
+            <a class="help-button col-sm-4 downloadupaddinvoice"  title="Download uploaded invoice" download><i class="icon-download-alt"></i></a>
+          </div>
+
+          <div class="container-user2">
+            <div class="container-mouse2" onclick="{enableSelector(event)}">
+              <img src="./images/mao.png" alt="icon mao navbar" />
+            </div>
+            <div
+              class="container-lixeira2"
+              onclick="{deleteSelectedObject(event)}"
+            >
+              <img src="./images/lixo.png" alt="icon lixo navbar" />
+            </div>
+            <div class="container-save2" onclick="{savePDF()}">
+              <img src="./images/disquete.png" alt="icon save navbar" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container-icons">
+          <div class="container-icons__primeiro" onclick="{addImage(event)}">
+            <img src="../../images/galeria.png" alt="icon house navbar" />
+          </div>
+
+          <div class="container-icons__segundo" onclick="{clearPage(event)}">
+            <img
+              src="./images/excluir-selecao.png"
+              alt="icon user navbar"
+            />
+          </div>
+
+          <div
+            class="container-icons__terceiro"
+            id="buttonPincel"
+            onclick="{enablePencil(event)}"
+          >
+            <img src="./images/pincel.png" alt="icon galeria navbar" />
+          </div>
+
+          <div
+            class="container-icons__quarto container-A"
+            id="buttonA"
+            onclick="{enableAddText(event)}"
+          >
+            <img src="./images/a.png" alt="icon Alfabeto navbar" />
+          </div>
+
+          <div class="container-icons__quinto" id="buttonStar">
+            <img src="./images/formas.png" alt="icon formas navbar" />
+          </div>
+        </div>
+
+        <div class="container-user">
+          <div class="container-mouse" onclick="{enableSelector(event)}">
+            <img src="./images/mao.png" alt="icon mao navbar" />
+          </div>
+          <div
+            class="container-lixeira"
+            onclick="{deleteSelectedObject(event)}"
+          >
+            <img src="./images/lixo.png" alt="icon lixo navbar" />
+          </div>
+          <div class="container-save" onclick="{savePDF()}">
+            <img src="./images/disquete.png" alt="icon save navbar" />
+          </div>
+        </div>
+      </div>
+
+      <div class="separador">
+        <div class="option"></div>
+      </div>
+
+      <!--container buttons do pincel-->
+      <div class="container-buttons-pincel">
+        <div class="container-buttons__pincel">
+          <div
+            class="button-secundario color-tool"
+            style="background-color: #212121"
+          ></div>
+
+          <div
+            class="button-secundario color-tool"
+            style="background-color: red"
+          ></div>
+
+          <div
+            class="button-secundario color-tool"
+            style="background-color: blue"
+          ></div>
+
+          <div
+            class="button-secundario color-tool"
+            style="background-color: green"
+          ></div>
+
+          <div
+            class="button-secundario color-tool"
+            style="background-color: yellow"
+          ></div>
+        </div>
+      </div>
+
+      <!--container buttons do A-->
+      <div class="container-buttons-A">
+        <div class="container-buttons__A">
+          <div class="button-secundario-A">
+            <label for>Brush</label>
+            <label for>Size</label>
+            <input
+              type="number"
+              class="form-control text-right"
+              value="1"
+              id="brush-size"
+              max="50"
+            />
+          </div>
+
+          <div class="button-secundario-A">
+            <label for>Font</label>
+            <label for>Size</label>
+            <select id="font-size" class="form-control">
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="16" selected="">16</option>
+              <option value="18">18</option>
+              <option value="24">24</option>
+              <option value="32">32</option>
+              <option value="48">48</option>
+              <option value="64">64</option>
+              <option value="72">72</option>
+              <option value="108">108</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!--container buttons do Star-->
+      <div class="container-buttons-Star">
+        <div class="container-buttons__Star">
+          <div class="button-secundario">
+            <img
+              src="./images/circulo.png"
+              onclick="enableCircle(event)"
+              alt=""
+            />
+          </div>
+
+          <div class="button-secundario" onclick="enableRectangle(event)">
+            <img src="./images/quadrado.png" alt="" />
+          </div>
+
+          <div class="button-secundario">
+            <img
+              src="./images/triangulo.png"
+              onclick="enableTriangulo(event)"
+              alt=""
+            />
+          </div>
+
+          <div class="button-secundario">
+            <img
+              src="./images/linha.png"
+              onclick="enableLine(event)"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="button-secundario B5-STAR"
+            onclick="enableQuadrado(event)   "
+          >
+            <img src="./images/retangulo.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- container central -->
+      <div id="pdf-container" class="pdf-container"></div>
+    </div>
+
+    <div class="container-bottom"></div>
+  </div>
+
+  <!--script locais-->
+  <script src="script/botoes.js"></script>
+  <script src="script/fabric.js"></script>
+  <script src="script/function.js"></script>
+  <script src="script/PDFAnnotate.js"></script>
+
+  <!--JQUERY-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!--Scripts do Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <!--Bibliotecas de PDF de Javascript - Encontrados no site: https://cdnjs.com/libraries/pdf.js-->
+  <!-- As duas bibliotecas a seguir servem para realizar a leitura do pdf e para manipulação dela -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.worker.min.js"></script>
+  <!-- Manipulação do pdf -->
+
+  <!--Bibliotecas de Desenhos-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.util.min.js"></script>  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+  <script type="module" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+  <script>
+
+    function changeBrushSize() {
+      var width = $("#brush-size").val();
+      pdf.setBrushSize(width);
+    }
+
+    // Função para manipular a mudança de tamanho da fonte
+    function changeFontSize() {
+      var font_size = $("#font-size").val();
+      pdf.setFontSize(font_size);
+    }
+
+    // Evento de mudança de tamanho do pincel
+    $("#brush-size").change(changeBrushSize);
+
+    // Evento de mudança de tamanho da fonte
+    $("#font-size").change(changeFontSize);
+
+    $(document).ready(function () {
+      var colorTools = $(".color-tool");
+
+      colorTools.click(function () {
+        var clickedColorTool = $(this);
+
+        // Verifica se o elemento clicado já possui a classe 'active'
+        if (!clickedColorTool.hasClass("active")) {
+          // Remova a classe 'active' de todos os elementos .color-tool
+          colorTools.removeClass("active");
+
+          // Adicione a classe 'active' ao elemento clicado
+          clickedColorTool.addClass("active");
+
+          // Obtenha a cor do elemento clicado
+          var color = clickedColorTool.css("background-color");
+          console.log("Nova cor:", color); // Adicione um log para verificar a cor
+
+          // Verifique se a variável 'pdf' está definida e se a função 'setColor' está funcionando corretamente
+          if (typeof pdf !== 'undefined' && typeof pdf.setColor === 'function') {
+            pdf.setColor(color);
+            console.log("Cor do pincel alterada para:", color); // Adicione um log para verificar se a cor do pincel foi alterada
+          } else {
+            console.error("pdf.setColor não está definido ou não é uma função."); // Adicione uma mensagem de erro caso haja problemas com a função 'setColor'
+          }
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
