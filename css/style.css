@@ -28,9 +28,9 @@ html {
 }
 
 input[type="file"]{
-    height: 6.5rem;
+    height: auto;
     width: 5rem;
-    background: #fff;
+    background: #ffffff;
     margin-left: 3rem;
     border-radius: .5rem;
     cursor: pointer;

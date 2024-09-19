@@ -23,6 +23,10 @@
 }
 
 @media (max-width: 1700px){
+    input[type="file"]{
+        height: 5.5rem;
+    }
+    
     #pdf-container.pequeno{
         margin-left: 30rem;
     }
@@ -471,6 +475,9 @@
         text-align: center;
         gap: 1rem;
     }
+    .container-bottom{
+        background-color: rgb(208, 208, 208);
+    }
 
     .container-user{
         display: none;
@@ -499,7 +506,7 @@
     .Container-superior .Container-box .container-lateral .container-user2 .container-mouse2{
         width: 4.5rem;
         height: 4.5rem;
-        background: var(--preto);
+        background: var(--cinza-navbar);
         border-radius: 50%;
         line-height: 4.7rem;
         margin-bottom: 1.5rem;
@@ -650,7 +657,6 @@
 
 
     .Container-superior .Container-box .container-lateral{
-        background: var(--cinza-navbar);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -673,7 +679,6 @@
     .container-bottom{
         display: flex;
         height: 48rem;
-        background-color: #4E5153;
     }
 
     .container-bottom.semFundo{
@@ -1207,7 +1212,7 @@
     }
 
     .Container-superior .Container-box .container-lateral .container-icons .container-icons__terceiro{
-        line-height: 7rem;
+        line-height: 4rem;
     }
 
     .separador.activeA .option{
